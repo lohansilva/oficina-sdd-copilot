@@ -13,7 +13,7 @@ Você está na **fase 3 de 3 da especificação: Tarefas**. O objetivo é transf
 
 - Siga as [regras de escrita de specs](../instructions/specs.instructions.md).
 - **Não escreva código.**
-- Crie de 4 a 6 tarefas. Cada uma precisa caber em uma única execução do agente (cerca de 2 minutos) e deixar o projeto **funcionando e testável no navegador**.
+- Crie 3 ou 4 tarefas, nunca mais que 4. Agrupe o que for preciso para caber nesse limite. Cada uma precisa caber em uma única execução do agente (cerca de 2 minutos) e deixar o projeto **funcionando e testável no navegador**.
 - A ordem é incremental:
   - a tarefa 1 é sempre o esqueleto: `index.html`, `style.css`, `src/config.js` e `src/main.js`, com o loop rodando e algo visível na tela;
   - a última tarefa é o polimento e a conferência de todos os critérios.
