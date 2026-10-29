@@ -12,13 +12,13 @@ O objetivo não é o jogo, é o **processo**. Em vez de pedir "faz um jogo aí" 
 
 ---
 
-## ✅ Antes da oficina (5 min, faça em casa)
+## ✅ Antes da oficina (15 min, faça em casa)
 
 - [ ] Ter uma conta no [GitHub](https://github.com/signup).
 - [ ] Ativar o Copilot em <https://github.com/settings/copilot> (plano **Copilot Free**).
-  - 🎓 **É estudante?** Solicite o [GitHub Education](https://education.github.com/pack): ele libera o plano **Copilot Student**, com mais cota que o Free. A verificação pode levar alguns dias, então peça com antecedência.
+  - 🎓 **É estudante?** O [GitHub Education](https://education.github.com/pack) libera o plano **Copilot Student**, mas as novas adesões estão pausadas desde abril de 2026. Confira [aqui](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students) se já reabriram. O plano Free basta para a oficina.
 - [ ] Usar Chrome, Edge ou Firefox atualizado.
-- [ ] *(Opcional, para ganhar tempo)* Já fazer o [Passo 0](#passo-0).
+- [ ] **Recomendado:** fazer o [Passo 0](#passo-0) antes de chegar. Criar o Codespace pela primeira vez é a etapa mais demorada da oficina.
 
 ## 🗺️ Mapa da oficina
 
@@ -218,7 +218,7 @@ Abra `IDEIA.md`. Ela descreve o **Chuva de Bugs**: um dev 🧑‍💻 que coleta
 
 6. Repita para as próximas: `/4-implementar 2`, `/4-implementar 3`...
 
-> ⏱️ **Atrasado?** `/4-implementar 2-5` faz várias tarefas em sequência. Você perde os pontos de revisão do meio, mas ganha tempo.
+> ⏱️ **Atrasado?** `/4-implementar 2-4` faz várias tarefas em sequência. Você perde os pontos de revisão do meio, mas ganha tempo.
 
 **Encontrou um bug?** Use o fluxo de correção guiado por spec, em vez de só pedir "conserta aí":
 
@@ -297,9 +297,9 @@ Próximos passos sugeridos:
 
 | Sintoma | O que fazer |
 |---|---|
-| Os comandos `/1-requisitos` etc. não aparecem | Use o chat do **painel lateral** (não o chat inline) e confirme que o modo é **Agent**. Se continuar, rode `Ctrl+Shift+P` → **Developer: Reload Window**. |
+| Os comandos `/1-requisitos` etc. não aparecem | Use o chat do **painel lateral** (não o chat inline) e confirme que o modo é **Agent**. Se continuar, rode `Ctrl+Shift+P` → **Developer: Reload Window**. Último recurso: abra o arquivo da fase em `.github/prompts/`, copie o texto abaixo do cabeçalho e cole no chat. |
 | O Copilot pede login ou não responde | Confira se ele está ativo em <https://github.com/settings/copilot>. |
-| Aviso de limite ou cota atingida | A cota do plano gratuito acabou. Continue em dupla com um colega e, se for estudante, peça o GitHub Education para as próximas vezes. |
+| Aviso de limite ou cota atingida | A cota do plano gratuito acabou. Continue em dupla com um colega. |
 | O jogo não reage ao teclado | Clique na página do jogo antes, para ela receber o foco. |
 | A mudança não aparece no jogo | Recarregue com `Ctrl+Shift+R` e confira se você clicou em **Keep**. |
 | Tela branca | `F12` → **Console** → copie o erro e cole no chat. |

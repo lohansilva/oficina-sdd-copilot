@@ -17,12 +17,13 @@ Material de apoio para conduzir a oficina de 1 hora. O roteiro que os alunos seg
 ### Duas semanas antes
 
 - [ ] Publique este repositório na sua conta (ou organização) e marque **Settings → General → Template repository**.
-- [ ] Envie aos alunos a [mensagem pré-oficina](#5-mensagem-pré-oficina). A verificação do GitHub Education pode levar dias.
+- [ ] Envie aos alunos a [mensagem pré-oficina](#5-mensagem-pré-oficina).
+- [ ] Se for indicar o plano Copilot Student, confira [aqui](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students) se as adesões já reabriram. Elas estão pausadas desde abril de 2026, e a verificação do GitHub Education leva dias.
 
 ### Uma semana antes: ensaio (não pule)
 
 - [ ] Faça a oficina inteira com uma conta **Copilot Free**, de preferência uma conta nova, cronometrando cada passo.
-- [ ] No fim, confira o consumo de cota clicando no ícone do Copilot na barra de status do editor. É isso que diz se o plano Free aguenta o roteiro. O roteiro completo usa cerca de 15 interações com o agente. Se a cota ficar no limite, corte o "teste rápido" do Passo 0, os refinamentos opcionais e o bônus.
+- [ ] No fim, confira o consumo de cota clicando no ícone do Copilot na barra de status do editor. É isso que diz se o plano Free aguenta o roteiro. Referência: no ensaio de 28/10/2026, o roteiro completo, passo a passo e sem correções de bug, consumiu 14 créditos e levou pouco menos de 1 hora, e a criação do Codespace foi a etapa mais lenta. Cada `/corrigir-bug`, refinamento extra ou bônus soma créditos. Se a cota ficar no limite, corte o "teste rápido" do Passo 0, os refinamentos opcionais e o bônus.
 - [ ] Guarde o resultado do ensaio como **plano B**: crie no repositório do template uma branch `gabarito` com as specs e o código do ensaio. Quem usa o template recebe só a `main`, mas qualquer pessoa consegue consultar a branch pelo GitHub.
 - [ ] Se a oficina for em laboratório, teste a rede. Estes domínios precisam estar liberados:
   - `github.com`;
@@ -33,7 +34,7 @@ Material de apoio para conduzir a oficina de 1 hora. O roteiro que os alunos seg
 ### No dia
 
 - [ ] Projete o README do template na tela.
-- [ ] Peça para os alunos fazerem o **Passo 0** enquanto o pessoal chega. Criar o Codespace é a etapa mais lenta.
+- [ ] Quem não fez o **Passo 0** antes começa por ele assim que chegar, antes da abertura. Criar o Codespace é a etapa mais lenta.
 - [ ] Deixe o seu Codespace aberto para demonstrar cada fase ao vivo, sempre um passo à frente da turma.
 
 ---
@@ -78,7 +79,7 @@ O roteiro adapta o fluxo do workshop de SDD do Kiro para ferramentas gratuitas:
 ### Escolhas técnicas
 
 - **Codespaces:** nada para instalar nas máquinas e o mesmo ambiente para todos. A conta pessoal gratuita inclui 120 core-horas por mês, cerca de 60 h numa máquina de 2 núcleos, o que sobra para a oficina.
-- **Copilot Free ou Student:** o modo Agent está incluído no plano Free, mas a cota é limitada. Por isso o roteiro é enxuto, com cerca de 15 interações. O plano Free só permite seleção automática de modelo, então os prompts não fixam nenhum.
+- **Copilot Free ou Student:** o modo Agent está incluído no plano Free, mas a cota é limitada. Por isso o roteiro é enxuto: o ensaio completo consumiu 14 créditos. O plano Free só permite seleção automática de modelo, então os prompts não fixam nenhum.
 - **Prompt files em vez de uma ferramenta pronta de SDD:** não precisa instalar nada, e o prompt de cada fase fica **visível** para o aluno. Ferramentas como o Spec Kit ficam como próximo passo.
 - **HTML/JS puro, sem build:** o que a IA gera roda direto e publica no GitHub Pages sem configuração extra.
 - **Jogo com emojis:** resultado visual em minutos, sem arquivos de imagem ou som.
@@ -94,14 +95,14 @@ O roteiro adapta o fluxo do workshop de SDD do Kiro para ferramentas gratuitas:
 | Aluno sem Copilot ativo | Ative em <https://github.com/settings/copilot> e recarregue a janela do Codespace. |
 | A cota acabou no meio | O aluno continua em dupla com um colega ou acompanha pelo gabarito. |
 | O agente "fugiu" da spec (criou `package.json`, usou framework, implementou várias tarefas de uma vez) | **Undo** e depois: "Siga as instruções do projeto e implemente só a tarefa N." É um ótimo momento para mostrar à turma por que a revisão existe. |
-| Os comandos `/` não aparecem | O chat precisa estar no painel lateral e no modo Agent. Se não resolver: `Ctrl+Shift+P` → **Developer: Reload Window**. |
+| Os comandos `/` não aparecem | O chat precisa estar no painel lateral e no modo Agent. Se não resolver: `Ctrl+Shift+P` → **Developer: Reload Window**. Último recurso: abrir o arquivo da fase em `.github/prompts/` e colar o texto no chat. |
 | O jogo não reage | Falta foco (clicar na página) ou há erro no Console (`F12`). |
 | A aba do jogo não abriu | O navegador bloqueou o pop-up. Abra pela aba **Ports** → 8080 → 🌐. |
 | Codespace lento para criar | Peça paciência. Em último caso, delete e crie de novo. |
 
 ### Plano B
 
-- **Atrasou?** Pule a personalização do Passo 1, faça os Passos 3 e 4 sem refinamentos e use `/4-implementar 2-5` para fazer várias tarefas de uma vez.
+- **Atrasou?** Pule a personalização do Passo 1, faça os Passos 3 e 4 sem refinamentos e use `/4-implementar 2-4` para fazer várias tarefas de uma vez.
 - **O Copilot caiu para todo mundo?** Siga em modo demonstração na sua tela. Os alunos copiam os arquivos da branch `gabarito` para o próprio repositório e publicam no Pages. O aprendizado do processo continua, porque eles leem e discutem as specs do gabarito.
 
 ### Adaptando para outro projeto
@@ -122,15 +123,14 @@ Lembre a turma de **apagar o Codespace** em <https://github.com/codespaces> para
 
 ## 5. Mensagem pré-oficina
 
-Copie, ajuste e envie de 1 a 2 semanas antes:
+Copie, ajuste e envie assim que possível, de preferência alguns dias antes. Funciona também na véspera:
 
 ```text
-Olá! Na oficina "Da ideia ao GitHub com IA" vamos construir e publicar um jogo usando GitHub Copilot, direto no navegador. Não precisa instalar nada, mas precisa de 5 minutos de preparação ANTES:
+Olá! Na oficina "Da ideia ao GitHub com IA" vamos construir e publicar um jogo usando GitHub Copilot, direto no navegador. Não precisa instalar nada, mas precisa de uma preparação ANTES:
 
 1. Crie uma conta no GitHub (se ainda não tiver): https://github.com/signup
-2. Ative o Copilot gratuito: https://github.com/settings/copilot
-3. Estudante? Peça o GitHub Education (dá mais cota de Copilot): https://education.github.com/pack
-   A aprovação pode levar alguns dias, então faça hoje.
+2. Ative o Copilot gratuito (plano Free): https://github.com/settings/copilot
+3. Abra o roteiro e faça o Passo 0 (criar seu repositório e o Codespace). Leva uns 10 minutos e é a parte mais lenta da oficina, então chegar com ele pronto faz diferença.
 4. No dia, leve seu login e senha do GitHub (e o app de autenticação, se você usa 2FA).
 
 Roteiro da oficina: <LINK DO REPOSITÓRIO TEMPLATE>
