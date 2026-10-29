@@ -325,7 +325,3 @@ Condições conferidas em 29/10/2026. Elas mudam com frequência, então confira
 ## Depois da oficina
 
 Seu código já está no GitHub, então **apague o Codespace** para não gastar sua cota gratuita: acesse <https://github.com/codespaces>, clique em **⋯** ao lado dele e depois em **Delete**.
-
----
-
-<sub>Facilitando esta oficina? Veja o [guia do facilitador](docs/facilitador.md).</sub>
