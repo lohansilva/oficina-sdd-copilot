@@ -16,7 +16,7 @@ O objetivo não é o jogo, é o **processo**. Em vez de pedir "faz um jogo aí" 
 
 - [ ] Ter uma conta no [GitHub](https://github.com/signup).
 - [ ] Ativar o Copilot em <https://github.com/settings/copilot> (plano **Copilot Free**).
-  - 🎓 **É estudante?** O [GitHub Education](https://education.github.com/pack) libera o plano **Copilot Student**, mas as novas adesões estão pausadas desde abril de 2026. Confira [aqui](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students) se já reabriram. O plano Free basta para a oficina.
+  - 🎓 **É estudante?** O [GitHub Education](https://education.github.com/pack) libera o plano **Copilot Student**, gratuito e com mais cota que o Free. A verificação pode levar alguns dias; o plano Free basta para a oficina.
 - [ ] Usar Chrome, Edge ou Firefox atualizado.
 - [ ] **Recomendado:** fazer o [Passo 0](#passo-0) antes de chegar. Criar o Codespace pela primeira vez é a etapa mais demorada da oficina.
 
