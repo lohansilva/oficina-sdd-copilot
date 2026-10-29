@@ -1,4 +1,4 @@
-# 💡 Ideia: Chuva de Bugs
+# Ideia: Chuva de Bugs
 
 > Este é o ponto de partida da especificação. Está escrito como você explicaria o projeto para um colega, sem pensar em código.
 > Quer personalizar? Mude o tema **antes** de rodar `/1-requisitos` (troque ☕/🐛 por 🍕/🥦 ou ⭐/☄️, por exemplo), mas mantenha a mecânica simples.
