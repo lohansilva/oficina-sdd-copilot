@@ -20,7 +20,7 @@ Você está na **fase 2 de 3 da especificação: Design**. O objetivo é decidir
 ## Estrutura do arquivo
 
 ```markdown
-# Design — <nome do projeto>
+# Design: <nome do projeto>
 
 ## Visão geral
 <3 a 5 frases>
@@ -36,7 +36,7 @@ Você está na **fase 2 de 3 da especificação: Design**. O objetivo é decidir
 <árvore de arquivos, com 1 linha de descrição para cada um>
 
 ## Componentes
-### `<arquivo>` — <nome>
+### `<arquivo>`: <nome>
 - **Responsabilidade:** ...
 - **Estado:** ...
 - **Funções principais:** `nome(parametros)`: o que faz

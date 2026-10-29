@@ -1,4 +1,4 @@
-# 🐛☕ Oficina: da ideia ao GitHub com IA — Desenvolvimento Guiado por Especificação (SDD)
+# Da ideia ao GitHub com IA: oficina de desenvolvimento guiado por especificação (SDD)
 
 > Em **1 hora** você vai especificar, construir e publicar um jogo de navegador usando o **GitHub Copilot** dentro do **GitHub Codespaces**. É tudo gratuito, roda no navegador e não precisa instalar nada.
 
@@ -12,31 +12,31 @@ O objetivo não é o jogo, é o **processo**. Em vez de pedir "faz um jogo aí" 
 
 ---
 
-## ✅ Antes da oficina (15 min, faça em casa)
+## Antes da oficina (15 min, faça em casa)
 
 - [ ] Ter uma conta no [GitHub](https://github.com/signup).
 - [ ] Ativar o Copilot em <https://github.com/settings/copilot> (plano **Copilot Free**).
-  - 🎓 **É estudante?** O [GitHub Education](https://education.github.com/pack) libera o plano **Copilot Student**, gratuito e com mais cota que o Free. A verificação pode levar alguns dias; o plano Free basta para a oficina.
+  - **É estudante?** O [GitHub Education](https://education.github.com/pack) libera o plano **Copilot Student**, gratuito e com mais cota que o Free. A verificação pode levar alguns dias; o plano Free basta para a oficina.
 - [ ] Usar Chrome, Edge ou Firefox atualizado.
 - [ ] **Recomendado:** fazer o [Passo 0](#passo-0) antes de chegar. Criar o Codespace pela primeira vez é a etapa mais demorada da oficina.
 
-## 🗺️ Mapa da oficina
+## Mapa da oficina
 
 | Tempo | Etapa | Você sai com |
 |---|---|---|
-| 0:00 | Abertura: o que é SDD | — |
-| 0:05 | [Passo 0 — Repositório e Codespace](#passo-0) | Ambiente pronto |
-| 0:12 | [Passo 1 — A ideia](#passo-1) | `IDEIA.md` lida (e personalizada, se quiser) |
-| 0:14 | [Passo 2 — Requisitos: o QUÊ](#passo-2) | `specs/requirements.md` |
-| 0:24 | [Passo 3 — Design: o COMO](#passo-3) | `specs/design.md` |
-| 0:31 | [Passo 4 — Tarefas: os PASSOS](#passo-4) | `specs/tasks.md` |
-| 0:36 | [Passo 5 — Implementação](#passo-5) | Jogo funcionando |
-| 0:51 | [Passo 6 — Publicação](#passo-6) | Link no GitHub Pages |
-| 0:57 | Encerramento | — |
+| 0:00 | Abertura: o que é SDD | |
+| 0:05 | [Passo 0: repositório e Codespace](#passo-0) | Ambiente pronto |
+| 0:12 | [Passo 1: a ideia](#passo-1) | `IDEIA.md` lida (e personalizada, se quiser) |
+| 0:14 | [Passo 2: requisitos, o QUÊ](#passo-2) | `specs/requirements.md` |
+| 0:24 | [Passo 3: design, o COMO](#passo-3) | `specs/design.md` |
+| 0:31 | [Passo 4: tarefas, os PASSOS](#passo-4) | `specs/tasks.md` |
+| 0:36 | [Passo 5: implementação](#passo-5) | Jogo funcionando |
+| 0:51 | [Passo 6: publicação](#passo-6) | Link no GitHub Pages |
+| 0:57 | Encerramento | |
 
 ---
 
-## 🧠 SDD em 2 minutos
+## SDD em 2 minutos
 
 Quando você pede tudo de uma vez para a IA, ela precisa **adivinhar** o que você quer. Às vezes acerta, mas muitas vezes você recebe 300 linhas de código que fazem *quase* o que você queria, e fica difícil saber o quê.
 
@@ -44,11 +44,11 @@ No SDD você quebra o trabalho em etapas, e cada etapa gera um documento curto q
 
 ```mermaid
 flowchart LR
-    A["💡 Ideia<br/>IDEIA.md"] --> B["📋 Requisitos<br/>o QUÊ"]
-    B --> C["🏗️ Design<br/>o COMO"]
-    C --> D["✅ Tarefas<br/>os PASSOS"]
-    D --> E["💻 Código"]
-    E --> F["🚀 Publicação"]
+    A["Ideia<br/>IDEIA.md"] --> B["Requisitos<br/>o QUÊ"]
+    B --> C["Design<br/>o COMO"]
+    C --> D["Tarefas<br/>os PASSOS"]
+    D --> E["Código"]
+    E --> F["Publicação"]
 ```
 
 Entre uma etapa e outra existe um **portão**: você lê, ajusta e faz commit. **A IA escreve; você decide.**
@@ -81,7 +81,7 @@ Os requisitos usam o padrão **EARS** (*Easy Approach to Requirements Syntax*). 
 
 <a id="passo-0"></a>
 
-## Passo 0 — Crie seu repositório e abra o Codespace (7 min)
+## Passo 0: crie seu repositório e abra o Codespace (7 min)
 
 1. No topo desta página, clique em **Use this template → Create a new repository**.
 2. Preencha:
@@ -105,23 +105,23 @@ Os requisitos usam o padrão **EARS** (*Easy Approach to Requirements Syntax*). 
 | `.github/prompts/*.prompt.md` | Os comandos de cada fase (`/1-requisitos`, `/2-design`...). Abra um e veja: é só um prompt bem escrito! |
 | `.devcontainer/` | A configuração deste ambiente do Codespaces |
 
-> 🔎 **Teste rápido (opcional):** pergunte no chat *"Quais instruções deste projeto você está seguindo?"*. Na resposta, procure a referência a `copilot-instructions.md`: é a prova de que o contexto permanente está funcionando.
+> **Teste rápido (opcional):** pergunte no chat *"Quais instruções deste projeto você está seguindo?"*. Na resposta, procure a referência a `copilot-instructions.md`: é a prova de que o contexto permanente está funcionando.
 
 ---
 
 <a id="passo-1"></a>
 
-## Passo 1 — A ideia (2 min)
+## Passo 1: a ideia (2 min)
 
 Abra `IDEIA.md`. Ela descreve o **Chuva de Bugs**: um dev 🧑‍💻 que coleta cafés ☕ e desvia de bugs 🐛 que caem do céu.
 
-🎨 **Quer personalizar?** Troque o tema agora, **antes** de gerar os requisitos (por exemplo 🍕/🥦 ou ⭐/☄️). Mantenha a mecânica simples: o tempo é curto!
+**Quer personalizar?** Troque o tema agora, **antes** de gerar os requisitos (por exemplo 🍕/🥦 ou ⭐/☄️). Mantenha a mecânica simples: o tempo é curto!
 
 ---
 
 <a id="passo-2"></a>
 
-## Passo 2 — Requisitos: o QUÊ (10 min)
+## Passo 2: requisitos, o QUÊ (10 min)
 
 1. No chat, digite `/1-requisitos` e pressione **Enter**.
 2. O Copilot cria `specs/requirements.md`. Clique em **Keep** para aceitar o arquivo.
@@ -149,13 +149,13 @@ Abra `IDEIA.md`. Ela descreve o **Chuva de Bugs**: um dev 🧑‍💻 que coleta
    git add -A && git commit -m "docs: requisitos" && git push
    ```
 
-> 💡 **Por que commitar a cada fase?** Cada commit vira um ponto de restauração. Se a IA estragar algo na próxima etapa, você volta para cá.
+> **Por que commitar a cada fase?** Cada commit vira um ponto de restauração. Se a IA estragar algo na próxima etapa, você volta para cá.
 
 ---
 
 <a id="passo-3"></a>
 
-## Passo 3 — Design: o COMO (7 min)
+## Passo 3: design, o COMO (7 min)
 
 1. No chat: `/2-design` e depois **Keep**.
 2. Abra `specs/design.md` no preview (`Ctrl+Shift+V`). Os diagramas aparecem desenhados.
@@ -180,7 +180,7 @@ Abra `IDEIA.md`. Ela descreve o **Chuva de Bugs**: um dev 🧑‍💻 que coleta
 
 <a id="passo-4"></a>
 
-## Passo 4 — Tarefas: os PASSOS (5 min)
+## Passo 4: tarefas, os PASSOS (5 min)
 
 1. No chat: `/3-tarefas` e depois **Keep**.
 2. **Revise** `specs/tasks.md`:
@@ -197,7 +197,7 @@ Abra `IDEIA.md`. Ela descreve o **Chuva de Bugs**: um dev 🧑‍💻 que coleta
 
 <a id="passo-5"></a>
 
-## Passo 5 — Implementação (15 min)
+## Passo 5: implementação (15 min)
 
 1. **Ligue o servidor.** No terminal, rode:
 
@@ -205,7 +205,7 @@ Abra `IDEIA.md`. Ela descreve o **Chuva de Bugs**: um dev 🧑‍💻 que coleta
    npx --yes http-server -c-1 -p 8080
    ```
 
-   Uma aba do navegador vai abrir com o seu jogo, que por enquanto está vazio. Se a aba não abrir, vá na aba **Ports** do painel inferior, encontre a porta **8080** e clique no ícone 🌐.
+   Uma aba do navegador vai abrir com o seu jogo, que por enquanto está vazio. Se a aba não abrir, vá na aba **Ports** do painel inferior, encontre a porta **8080** e clique no ícone de globo.
    Deixe esse terminal rodando e use um **novo terminal** (botão **+**) para os comandos do git.
 2. No chat: `/4-implementar 1`
 3. O Copilot cria e edita os arquivos. Se ele pedir para rodar algum comando, leia o comando antes de clicar em **Allow**. Depois, revise as mudanças e clique em **Keep**.
@@ -218,7 +218,7 @@ Abra `IDEIA.md`. Ela descreve o **Chuva de Bugs**: um dev 🧑‍💻 que coleta
 
 6. Repita para as próximas: `/4-implementar 2`, `/4-implementar 3`...
 
-> ⏱️ **Atrasado?** `/4-implementar 2-4` faz várias tarefas em sequência. Você perde os pontos de revisão do meio, mas ganha tempo.
+> **Atrasado?** `/4-implementar 2-4` faz várias tarefas em sequência. Você perde os pontos de revisão do meio, mas ganha tempo.
 
 **Encontrou um bug?** Use o fluxo de correção guiado por spec, em vez de só pedir "conserta aí":
 
@@ -234,7 +234,7 @@ O Copilot descobre qual requisito o bug quebra (ou adiciona um, se a spec tinha 
 
 <a id="passo-6"></a>
 
-## Passo 6 — Publique no GitHub Pages (5 min)
+## Passo 6: publique no GitHub Pages (5 min)
 
 1. Confira que está tudo enviado. `git status` deve dizer *nothing to commit*. Se não disser, faça mais um commit e `git push`.
 2. No seu repositório no GitHub, vá em **Settings → Pages**. Em **Build and deployment**, escolha:
@@ -242,7 +242,7 @@ O Copilot descobre qual requisito o bug quebra (ou adiciona um, se a spec tinha 
    - **Branch:** `main`, pasta `/ (root)`.
 
    Depois clique em **Save**.
-3. Espere cerca de 1 minuto e recarregue a página. Vai aparecer **"Your site is live at..."**. Abra o link no celular e mande para os amigos! 🎉
+3. Espere cerca de 1 minuto e recarregue a página. Vai aparecer **"Your site is live at..."**. Abra o link no celular e mande para os amigos.
 4. **Deixe o repositório com cara de portfólio.** Este README é o roteiro da oficina; troque-o pelo README do **seu** projeto. O roteiro original, com as referências de ferramentas e cursos, continua no [repositório da oficina](https://github.com/lohansilva/oficina-sdd-copilot).
 
    ```text
@@ -253,7 +253,7 @@ O Copilot descobre qual requisito o bug quebra (ou adiciona um, se a spec tinha 
 
 ---
 
-## ⭐ Bônus: evolua o jogo com SDD
+## Bônus: evolua o jogo com SDD
 
 Funcionalidade nova também começa pela spec. O comando `/nova-funcionalidade` atualiza requisitos, design e tarefas **sem escrever código**. Depois você implementa com `/4-implementar`.
 
@@ -267,7 +267,7 @@ Funcionalidade nova também começa pela spec. O comando `/nova-funcionalidade` 
 
 ---
 
-## 🎯 O que você praticou
+## O que você praticou
 
 - Separar **o quê** (requisitos), **o como** (design) e **os passos** (tarefas).
 - Revisar texto curto **antes** de revisar código.
@@ -275,7 +275,7 @@ Funcionalidade nova também começa pela spec. O comando `/nova-funcionalidade` 
 - Trabalhar em **incrementos verificáveis**, com um commit por passo.
 - **Rastreabilidade:** cada linha de código existe por causa de um requisito.
 
-## 🔭 Indo além
+## Indo além
 
 O fluxo que você usou não é exclusivo do Copilot. A mesma ideia aparece em outras ferramentas:
 
@@ -308,7 +308,7 @@ Condições conferidas em 29/10/2026. Elas mudam com frequência, então confira
 
 ---
 
-## 🆘 Problemas comuns
+## Problemas comuns
 
 | Sintoma | O que fazer |
 |---|---|
@@ -322,7 +322,7 @@ Condições conferidas em 29/10/2026. Elas mudam com frequência, então confira
 | `git push` rejeitado | Rode `git pull --rebase && git push`. |
 | O Codespace "sumiu" | Ele hiberna depois de 30 min parado. Reabra em **Code → Codespaces**. |
 
-## 🧹 Depois da oficina
+## Depois da oficina
 
 Seu código já está no GitHub, então **apague o Codespace** para não gastar sua cota gratuita: acesse <https://github.com/codespaces>, clique em **⋯** ao lado dele e depois em **Delete**.
 

@@ -23,7 +23,7 @@ Você está na **fase 1 de 3 da especificação: Requisitos**. O objetivo é des
 Use exatamente esta estrutura:
 
 ```markdown
-# Requisitos — <nome do projeto>
+# Requisitos: <nome do projeto>
 
 ## Introdução
 <2 ou 3 frases: o que é, para quem é e qual é a graça>
@@ -33,7 +33,7 @@ Use exatamente esta estrutura:
 
 ## Requisitos
 
-### Requisito 1 — <título curto>
+### Requisito 1: <título curto>
 **História de usuário:** Como <papel>, quero <ação>, para que <benefício>.
 
 **Critérios de aceitação**
