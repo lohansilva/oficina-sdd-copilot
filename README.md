@@ -243,7 +243,7 @@ O Copilot descobre qual requisito o bug quebra (ou adiciona um, se a spec tinha 
 
    Depois clique em **Save**.
 3. Espere cerca de 1 minuto e recarregue a página. Vai aparecer **"Your site is live at..."**. Abra o link no celular e mande para os amigos! 🎉
-4. **Deixe o repositório com cara de portfólio.** Este README é o roteiro da oficina; troque-o pelo README do **seu** projeto:
+4. **Deixe o repositório com cara de portfólio.** Este README é o roteiro da oficina; troque-o pelo README do **seu** projeto. O roteiro original, com as referências de ferramentas e cursos, continua no [repositório da oficina](https://github.com/lohansilva/oficina-sdd-copilot).
 
    ```text
    Reescreva o README.md para apresentar o meu jogo: nome, como jogar (controles), o link https://SEU-USUARIO.github.io/SEU-REPOSITORIO/ e uma seção "Como foi feito" explicando o fluxo SDD, com links para os arquivos em specs/.
@@ -290,6 +290,21 @@ Próximos passos sugeridos:
 
 - **[Spec Kit](https://github.com/github/spec-kit):** o toolkit open source do GitHub para SDD, mais completo que esta oficina e compatível com vários agentes.
 - **[Personalização do Copilot no VS Code](https://code.visualstudio.com/docs/copilot/customization/overview):** prompt files, instruções e agentes customizados.
+
+### Assistentes de código gratuitos
+
+Condições conferidas em 29/10/2026. Elas mudam com frequência, então confira na página de cada oferta. Ofertas que pedem cartão renovam sozinhas: cancele antes do fim do período grátis.
+
+| Ferramenta | Para todos | Para estudantes |
+|---|---|---|
+| [GitHub Copilot](https://github.com/features/copilot/plans) | Plano Free, o mesmo da oficina | Copilot Student grátis via [GitHub Education](https://education.github.com/pack), com 200 créditos de IA por mês |
+| [Google Antigravity](https://antigravity.google) | IDE com agentes, com plano individual gratuito | Universitários no Brasil: Google AI Plus grátis por 12 meses em [gemini.google/br/students](https://gemini.google/br/students/), com resgate até 31/12/2026 (pede cartão). Limites maiores no Antigravity só com o AI Pro |
+| [Kiro](https://kiro.dev) (AWS) | 50 créditos por mês, sem cartão. Tem modo spec, o mesmo fluxo da oficina | 1.000 créditos por mês por 1 ano em [universidades parceiras](https://kiro.dev/students) |
+
+### Cursos gratuitos do Instituto Eldorado
+
+- [TIC em Trilhas](https://ticemtrilhas.org.br): cursos online, gratuitos e com certificado, do programa MCTI Futuro. Há trilhas de programação, IA, dados, mobile, jogos e cibersegurança.
+- Residência em TICs Trilhas IA: programa do MCTI executado pelo Eldorado, com formação prática em IA até 2028 e universidade parceira em Manaus. A entrada é por edital; acompanhe em [eldorado.org.br](https://eldorado.org.br).
 
 ---
 
