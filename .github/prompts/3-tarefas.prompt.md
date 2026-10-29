@@ -23,7 +23,7 @@ Você está na **fase 3 de 3 da especificação: Tarefas**. O objetivo é transf
 ## Estrutura do arquivo
 
 ```markdown
-# Plano de implementação — <nome do projeto>
+# Plano de implementação: <nome do projeto>
 
 > Como usar: rode `/4-implementar N` para cada tarefa, teste no navegador e faça commit.
 

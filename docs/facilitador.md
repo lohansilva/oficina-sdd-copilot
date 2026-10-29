@@ -1,4 +1,4 @@
-# 🎤 Guia do facilitador
+# Guia do facilitador
 
 Material de apoio para conduzir a oficina de 1 hora. O roteiro que os alunos seguem é o [README](../README.md).
 
@@ -43,17 +43,17 @@ Material de apoio para conduzir a oficina de 1 hora. O roteiro que os alunos seg
 
 | Tempo | Bloco | O que você faz | Mensagem-chave |
 |---|---|---|---|
-| 0:00–0:05 | Abertura | Mostre o jogo do ensaio rodando no Pages e explique *vibe coding* × SDD com o diagrama do README. | "Hoje vocês não vão programar: vão **especificar e revisar**. Quem digita o código é o Copilot." |
-| 0:05–0:12 | Passo 0 | Circule ajudando quem travou na criação do Codespace ou no login do Copilot. Abra `.github/copilot-instructions.md` na tela. | "Esse arquivo é o contexto que a IA lê em **toda** conversa. É a memória do projeto." |
-| 0:12–0:14 | Passo 1 | Leia a `IDEIA.md` em voz alta. | "Ideia vaga gera código vago." |
-| 0:14–0:24 | Passo 2 | Rode `/1-requisitos` na sua tela, escolha um critério EARS e pergunte à turma: "dá para testar isso jogando?". | "Revisar 40 linhas de requisito é muito mais barato que revisar 300 linhas de código." |
-| 0:24–0:31 | Passo 3 | Abra o preview do design e mostre o diagrama e a tabela do `CONFIG`. | "O design é onde decidimos a estrutura **antes** que ela vire código difícil de mudar." |
-| 0:31–0:36 | Passo 4 | Mostre a rastreabilidade (`_Requisitos: 1.1_`) e o "Como verificar". | "Tarefa pequena gera revisão pequena e erro pequeno." |
-| 0:36–0:51 | Passo 5 | Ajude com os bugs. Incentive o `/corrigir-bug` no lugar de "conserta aí". | "Bug também passa pela spec: qual requisito ele quebra?" |
-| 0:51–0:57 | Passo 6 | Peça para cada aluno colar o link do jogo no [mural](#mural-de-jogos-opcional). | "O histórico de commits de vocês conta a história do processo." |
-| 0:57–1:00 | Encerramento | Recapitule o fluxo e aponte o "Indo além" do README. | "Esse fluxo funciona em qualquer ferramenta: Copilot, Kiro, Spec Kit, Claude Code..." |
+| 0:00 a 0:05 | Abertura | Mostre o jogo do ensaio rodando no Pages e explique *vibe coding* × SDD com o diagrama do README. | "Hoje vocês não vão programar: vão **especificar e revisar**. Quem digita o código é o Copilot." |
+| 0:05 a 0:12 | Passo 0 | Circule ajudando quem travou na criação do Codespace ou no login do Copilot. Abra `.github/copilot-instructions.md` na tela. | "Esse arquivo é o contexto que a IA lê em **toda** conversa. É a memória do projeto." |
+| 0:12 a 0:14 | Passo 1 | Leia a `IDEIA.md` em voz alta. | "Ideia vaga gera código vago." |
+| 0:14 a 0:24 | Passo 2 | Rode `/1-requisitos` na sua tela, escolha um critério EARS e pergunte à turma: "dá para testar isso jogando?". | "Revisar 40 linhas de requisito é muito mais barato que revisar 300 linhas de código." |
+| 0:24 a 0:31 | Passo 3 | Abra o preview do design e mostre o diagrama e a tabela do `CONFIG`. | "O design é onde decidimos a estrutura **antes** que ela vire código difícil de mudar." |
+| 0:31 a 0:36 | Passo 4 | Mostre a rastreabilidade (`_Requisitos: 1.1_`) e o "Como verificar". | "Tarefa pequena gera revisão pequena e erro pequeno." |
+| 0:36 a 0:51 | Passo 5 | Ajude com os bugs. Incentive o `/corrigir-bug` no lugar de "conserta aí". | "Bug também passa pela spec: qual requisito ele quebra?" |
+| 0:51 a 0:57 | Passo 6 | Peça para cada aluno colar o link do jogo no [mural](#mural-de-jogos-opcional). | "O histórico de commits de vocês conta a história do processo." |
+| 0:57 a 1:00 | Encerramento | Recapitule o fluxo e aponte o "Indo além" do README. | "Esse fluxo funciona em qualquer ferramenta: Copilot, Kiro, Spec Kit, Claude Code..." |
 
-> 💡 **Mostre o "segredo".** Em algum momento do Passo 2, abra `.github/prompts/1-requisitos.prompt.md`. Os alunos percebem que o "modo spec" é só um prompt bem escrito e versionado no repositório, que eles mesmos podem criar em qualquer projeto.
+> **Mostre o "segredo".** Em algum momento do Passo 2, abra `.github/prompts/1-requisitos.prompt.md`. Os alunos percebem que o "modo spec" é só um prompt bem escrito e versionado no repositório, que eles mesmos podem criar em qualquer projeto.
 
 ---
 
@@ -97,7 +97,7 @@ O roteiro adapta o fluxo do workshop de SDD do Kiro para ferramentas gratuitas:
 | O agente "fugiu" da spec (criou `package.json`, usou framework, implementou várias tarefas de uma vez) | **Undo** e depois: "Siga as instruções do projeto e implemente só a tarefa N." É um ótimo momento para mostrar à turma por que a revisão existe. |
 | Os comandos `/` não aparecem | O chat precisa estar no painel lateral e no modo Agent. Se não resolver: `Ctrl+Shift+P` → **Developer: Reload Window**. Último recurso: abrir o arquivo da fase em `.github/prompts/` e colar o texto no chat. |
 | O jogo não reage | Falta foco (clicar na página) ou há erro no Console (`F12`). |
-| A aba do jogo não abriu | O navegador bloqueou o pop-up. Abra pela aba **Ports** → 8080 → 🌐. |
+| A aba do jogo não abriu | O navegador bloqueou o pop-up. Abra pela aba **Ports**, porta 8080, ícone de globo. |
 | Codespace lento para criar | Peça paciência. Em último caso, delete e crie de novo. |
 
 ### Plano B
@@ -113,7 +113,7 @@ O roteiro adapta o fluxo do workshop de SDD do Kiro para ferramentas gratuitas:
 
 ### Mural de jogos (opcional)
 
-Habilite **Discussions** no repositório do template (**Settings → General → Features**) e crie um tópico "🎮 Mural de jogos" para os alunos colarem o link do jogo publicado. É um ótimo fechamento, e todo mundo joga o jogo de todo mundo.
+Habilite **Discussions** no repositório do template (**Settings → General → Features**) e crie um tópico "Mural de jogos" para os alunos colarem o link do jogo publicado. É um ótimo fechamento, e todo mundo joga o jogo de todo mundo.
 
 ### Depois da oficina
 
