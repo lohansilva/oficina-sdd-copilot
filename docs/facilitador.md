@@ -18,7 +18,7 @@ Material de apoio para conduzir a oficina de 1 hora. O roteiro que os alunos seg
 
 - [ ] Publique este repositório na sua conta (ou organização) e marque **Settings → General → Template repository**.
 - [ ] Envie aos alunos a [mensagem pré-oficina](#5-mensagem-pré-oficina).
-- [ ] Se for indicar o plano Copilot Student, confira [aqui](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students) se as adesões já reabriram. Elas estão pausadas desde abril de 2026, e a verificação do GitHub Education leva dias.
+- [ ] Se for indicar o plano Copilot Student, lembre que a verificação do GitHub Education pode levar dias.
 
 ### Uma semana antes: ensaio (não pule)
 
