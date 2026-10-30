@@ -117,7 +117,33 @@ Os requisitos usam o padrão **EARS** (*Easy Approach to Requirements Syntax*). 
 
 Abra `IDEIA.md`. Ela descreve o **Chuva de Bugs**: um dev 🧑‍💻 que coleta cafés ☕ e desvia de bugs 🐛 que caem do céu.
 
-**Quer personalizar?** Troque o tema agora, **antes** de gerar os requisitos (por exemplo 🍕/🥦 ou ⭐/☄️). Mantenha a mecânica simples: o tempo é curto!
+### Faça um jogo diferente do exemplo
+
+O Chuva de Bugs é só o ponto de partida. O processo é o mesmo para todos, mas o jogo pode ser seu: escolha um tema e, se quiser, uma variação pequena. Faça isso **antes** de gerar os requisitos, porque é a partir daqui que a spec nasce.
+
+Algumas ideias de tema:
+
+| Tema | Personagem | Coleta | Desvia de |
+|---|---|---|---|
+| Espaço | nave 🚀 | estrelas ⭐ | meteoros ☄️ |
+| Amazônia | canoa 🛶 | peixes 🐟 | troncos 🪵 |
+| Cozinha | chef 🧑‍🍳 | tomates 🍅 | fogo 🔥 |
+| Pizzaria | entregador 🛵 | pizzas 🍕 | brócolis 🥦 |
+
+E algumas variações que cabem no tempo da oficina (escolha no máximo uma):
+
+- em vez de vidas, a partida dura 60 segundos e vale o máximo de pontos;
+- um item que deixa tudo mais lento por alguns segundos;
+- o fundo muda de cor a cada 10 pontos;
+- os itens caem em zigue-zague em vez de em linha reta.
+
+Para aplicar, edite a `IDEIA.md` ou descreva a mudança junto do comando do Passo 2:
+
+```text
+/1-requisitos Tema: espaço. Uma nave 🚀 coleta estrelas ⭐ e desvia de meteoros ☄️. Em vez de vidas, a partida dura 60 segundos.
+```
+
+Mantenha a mecânica simples: o tempo é curto.
 
 ---
 
