@@ -20,7 +20,7 @@ Antes de qualquer alteração, leia estes arquivos (contexto obrigatório):
 1. Implemente **somente** o escopo da tarefa. Não adiante tarefas futuras e não adicione funcionalidades que não estão na spec.
 2. Siga o design: nomes de arquivos, componentes, funções e o objeto `CONFIG`. Nenhum número mágico fora de `src/config.js`.
 3. A spec é a fonte da verdade. Se ela estiver errada, incompleta ou contraditória para esta tarefa, **pare antes de codar**, explique o problema em até 3 linhas e proponha a correção na spec. Só continue depois que a spec for atualizada com o aceite do aluno.
-4. Não inicie servidores nem instale pacotes: o aluno já roda `npx --yes http-server -c-1 -p 8080`.
+4. Não inicie servidores nem instale pacotes: o aluno já roda um servidor na porta 8080.
 5. Ao terminar cada tarefa:
    - verifique se há erros nos arquivos alterados e corrija;
    - marque a tarefa como concluída em `specs/tasks.md` (`- [x]`).
