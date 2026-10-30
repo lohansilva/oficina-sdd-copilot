@@ -94,6 +94,8 @@ Os requisitos usam o padrão **EARS** (*Easy Approach to Requirements Syntax*). 
 4. Quando o editor abrir, abra o **Chat do Copilot** pelo ícone do Copilot no topo da janela ou com `Ctrl+Alt+I`. Se ele pedir login, entre com a sua conta do GitHub.
 5. No seletor abaixo da caixa de texto do chat, escolha o modo **Agent**.
 
+> **Codespace não abre ou a rede está lenta?** Faça a oficina na sua máquina seguindo o [LOCAL.md](LOCAL.md). O resto do roteiro continua igual.
+
 **Conheça o que veio no repositório:**
 
 | Caminho | Para que serve |
@@ -321,6 +323,7 @@ Condições conferidas em 29/10/2026. Elas mudam com frequência, então confira
 | O GitHub Pages mostra 404 | Aguarde 1 ou 2 minutos. Confira se o `index.html` está na raiz e se o repositório é **público**. |
 | `git push` rejeitado | Rode `git pull --rebase && git push`. |
 | O Codespace "sumiu" | Ele hiberna depois de 30 min parado. Reabra em **Code → Codespaces**. |
+| O Codespace não abre ou está muito lento | Siga o [LOCAL.md](LOCAL.md) e rode tudo na sua máquina. |
 
 ## Depois da oficina
 

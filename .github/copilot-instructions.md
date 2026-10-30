@@ -30,7 +30,7 @@ Este repositório é usado em uma oficina de **Desenvolvimento Guiado por Especi
 
 ## Ambiente
 
-- O aluno roda o servidor com `npx --yes http-server -c-1 -p 8080`. Não inicie outro servidor e não instale pacotes.
+- O aluno já roda um servidor na porta 8080 (`npx --yes http-server -c-1 -p 8080` no Codespace, ou `python -m http.server 8080` na própria máquina). Não inicie outro servidor e não instale pacotes.
 - Não altere `README.md`, `IDEIA.md`, `.github/` nem `.devcontainer/`, a menos que o aluno peça explicitamente.
 
 ## Comunicação
