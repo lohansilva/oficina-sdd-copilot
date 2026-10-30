@@ -346,6 +346,7 @@ Condições conferidas em 29/10/2026. Elas mudam com frequência, então confira
 | O jogo não reage ao teclado | Clique na página do jogo antes, para ela receber o foco. |
 | A mudança não aparece no jogo | Recarregue com `Ctrl+Shift+R` e confira se você clicou em **Keep**. |
 | Tela branca | `F12` → **Console** → copie o erro e cole no chat. |
+| Algo não aparece na tela (o dev, por exemplo) e o Console não mostra erro | Provavelmente a posição virou `NaN`, porque um valor `undefined` entrou numa conta. Use `/corrigir-bug` descrevendo o que sumiu e peça para verificar valores `NaN` nas posições. |
 | O GitHub Pages mostra 404 | Aguarde 1 ou 2 minutos. Confira se o `index.html` está na raiz e se o repositório é **público**. |
 | `git push` rejeitado | Rode `git pull --rebase && git push`. |
 | O Codespace "sumiu" | Ele hiberna depois de 30 min parado. Reabra em **Code → Codespaces**. |

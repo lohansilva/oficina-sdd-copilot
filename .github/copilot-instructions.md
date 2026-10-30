@@ -27,6 +27,7 @@ Este repositório é usado em uma oficina de **Desenvolvimento Guiado por Especi
 - Identificadores em inglês (`camelCase` para funções e variáveis, `PascalCase` para classes). Comentários e textos exibidos ao jogador em português do Brasil.
 - Prefira código simples e legível a otimizações: o público são estudantes.
 - No loop do jogo, use `requestAnimationFrame` com *delta time* em segundos.
+- Inicialize todo estado antes de usá-lo em cálculos; por exemplo, todas as teclas do controle começam em `false`. Um `undefined` numa conta vira `NaN`, e o canvas deixa de desenhar o que estiver numa coordenada `NaN`, sem mostrar erro no Console.
 
 ## Ambiente
 
