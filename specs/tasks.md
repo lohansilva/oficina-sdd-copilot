@@ -10,7 +10,7 @@
   - **Como verificar:** abra a página no navegador → a área escura centralizada mostra o nome de Chuva de Bugs, a instrução inicial e continua desenhando após alguns segundos.
   - _Requisitos: 1.1_
 
-- [ ] 2. Implemente controles e mecânica básica
+- [x] 2. Implemente controles e mecânica básica
   - Crie `src/input.js` com teclas inicializadas e suporte às setas, A/D e Espaço.
   - Crie `src/game.js` com início/reinício, posição limitada do dev, criação aleatória de cafés e bugs, queda, remoção no chão, colisões, pontos, vidas e HUD.
   - Conecte entrada, atualização e desenho em `src/main.js`, mantendo a partida testável mesmo antes do fim de jogo.
@@ -18,7 +18,7 @@
   - **Como verificar:** pressione Espaço → a partida começa com 0 pontos e 3 vidas; use setas e A/D → o dev se move sem sair da área; aguarde itens, colete um café e toque em um bug → o café soma 1, o bug remove 1 vida e itens que chegam ao chão desaparecem.
   - _Requisitos: 1.2, 1.3, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3, 4.1, 4.2, 4.3_
 
-- [ ] 3. Complete dificuldade, fim e recorde
+- [x] 3. Complete dificuldade, fim e recorde
   - Faça a velocidade de queda aumentar e o intervalo de criação diminuir progressivamente sem resetar pontos ou vidas.
   - Encerre a partida ao chegar a 0 vidas e mostre pontuação final, recorde e a instrução para pressionar Espaço.
   - Leia o recorde ao carregar a página, atualize-o somente quando a pontuação final for maior e salve-o no navegador.
