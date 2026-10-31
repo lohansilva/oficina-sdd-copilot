@@ -14,7 +14,12 @@ function drawStartScreen() {
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   context.fillStyle = CONFIG.panelColor;
-  context.fillRect(1, 1, canvas.width - 2, canvas.height - 2);
+  context.fillRect(
+    CONFIG.canvasInset,
+    CONFIG.canvasInset,
+    canvas.width - CONFIG.canvasInset * 2,
+    canvas.height - CONFIG.canvasInset * 2
+  );
 
   context.textAlign = 'center';
   context.textBaseline = 'middle';
@@ -36,9 +41,9 @@ function drawPlayingScreen(view) {
   context.font = CONFIG.hudFont;
   context.textAlign = 'left';
   context.textBaseline = 'top';
-  context.fillText(`Pontos: ${view.score}`, CONFIG.hudPadding, CONFIG.hudY);
+  context.fillText(`${CONFIG.scoreHudLabel}: ${view.score}`, CONFIG.hudPadding, CONFIG.hudY);
   context.textAlign = 'right';
-  context.fillText(`Vidas: ${view.lives}`, canvas.width - CONFIG.hudPadding, CONFIG.hudY);
+  context.fillText(`${CONFIG.livesHudLabel}: ${view.lives}`, canvas.width - CONFIG.hudPadding, CONFIG.hudY);
 
   context.textAlign = 'center';
   context.textBaseline = 'middle';
@@ -57,7 +62,12 @@ function drawGameOverScreen(view) {
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   context.fillStyle = CONFIG.panelColor;
-  context.fillRect(1, 1, canvas.width - 2, canvas.height - 2);
+  context.fillRect(
+    CONFIG.canvasInset,
+    CONFIG.canvasInset,
+    canvas.width - CONFIG.canvasInset * 2,
+    canvas.height - CONFIG.canvasInset * 2
+  );
 
   context.textAlign = 'center';
   context.textBaseline = 'middle';

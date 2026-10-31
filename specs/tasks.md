@@ -26,7 +26,7 @@
   - **Como verificar:** jogue por algum tempo → os itens caem mais rápido e aparecem com maior frequência; perca as 3 vidas → a tela final mostra pontuação e recorde; faça uma pontuação maior, recarregue a página e confirme que o recorde foi mantido; pressione Espaço → uma nova partida começa zerada.
   - _Requisitos: 5.1, 5.2, 5.3, 6.1, 6.2, 6.3, 6.4_
 
-- [ ] 4. Faça o polimento e confira todos os critérios
+- [x] 4. Faça o polimento e confira todos os critérios
   - Revise textos, emojis, cores, limites, colisões, reinício, delta time e tratamento de recorde inválido ou inexistente.
   - Confirme que não há números ajustáveis fora de `CONFIG`, que os caminhos são relativos e que cada módulo mantém sua responsabilidade.
   - Execute uma partida completa cobrindo início, controles, coleta, dano, aumento de dificuldade, fim, recorde e reinício.

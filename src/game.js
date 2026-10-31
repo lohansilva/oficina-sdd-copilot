@@ -37,12 +37,21 @@ function startGame() {
 }
 
 function loadHighScore() {
-  const savedScore = Number.parseInt(localStorage.getItem(CONFIG.highScoreKey), 10);
-  return Number.isFinite(savedScore) && savedScore >= 0 ? savedScore : 0;
+  try {
+    const storedScore = localStorage.getItem(CONFIG.highScoreKey);
+    const savedScore = Number(storedScore);
+    return storedScore?.trim() && Number.isInteger(savedScore) && savedScore >= 0 ? savedScore : 0;
+  } catch {
+    return 0;
+  }
 }
 
 function saveHighScore(score) {
-  localStorage.setItem(CONFIG.highScoreKey, String(score));
+  try {
+    localStorage.setItem(CONFIG.highScoreKey, String(score));
+  } catch {
+    return;
+  }
 }
 
 function finishGame() {
