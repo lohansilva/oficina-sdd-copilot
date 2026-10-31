@@ -2,7 +2,7 @@
 
 > Como usar: rode `/4-implementar N` para cada tarefa, teste no navegador e faça commit.
 
-- [ ] 1. Monte o esqueleto jogável
+- [x] 1. Monte o esqueleto jogável
   - Crie a página com Canvas 2D fixo e centralizado, o fundo escuro e o módulo de configuração.
   - Crie `src/main.js` com o estado inicial, o loop usando `requestAnimationFrame` e uma tela inicial visível.
   - Exiba o nome do jogo e a instrução para pressionar Espaço, deixando o Canvas funcionando sem erros.
